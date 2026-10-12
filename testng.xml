@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="RestAssured Suite">
+    <listeners>
+        <listener class-name="com.backend.automation.reporting.FailureHtmlReportListener"/>
+    </listeners>
+    <test name="jira-issue-creation-tests">
+        <classes>
+            <class name="com.backend.automation.tests.JiraIssueApiTest"/>
+        </classes>
+    </test>
+    <test name="jira-parent-child-workflow-tests">
+        <classes>
+            <class name="com.backend.automation.tests.JiraParentChildWorkflowTest"/>
+        </classes>
+    </test>
+</suite>
